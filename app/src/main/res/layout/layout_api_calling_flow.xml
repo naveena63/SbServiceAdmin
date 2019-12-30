@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:elevation="4dp"
+    tools:targetApi="lollipop">
+
+    <View
+        android:id="@+id/viewDummy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/tvApiError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTryAgain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/something_went_wrong"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/network_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvEnableNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:layout_marginEnd="@dimen/margin_30dp"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:gravity="center"
+            android:text="Network Error"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/no_internet_wifi" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewDummy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Network Error"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/margin_30dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>

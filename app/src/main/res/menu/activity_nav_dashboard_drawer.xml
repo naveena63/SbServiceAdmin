@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/open_jobs"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Open Jobs" />
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/closed_jobs"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Closed Jobs" />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/canceld_jobs"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Cancelled Jobs" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/pending_jobs"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Pending Jobs" />
+
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/payment_pending_jobs"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Payment Pending Jobs" />
+    </group>
+    <group android:id="@+id/grp7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_emp"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="All Employees" />
+
+    </group>
+    <group android:id="@+id/grp8" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_assign"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Assign Jobs" />
+
+    </group>
+
+    <group android:id="@+id/grp6" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="Logout" />
+
+       </group>
+
+
+</menu>

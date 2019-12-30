@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_15dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/nameTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/taviraj_medium"
+                                        android:text="Custmor Name"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/nameTv"
+                                        android:fontFamily="@font/taviraj_medium"
+                                        android:text="Naveena"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp" />
+
+                                </RelativeLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@drawable/divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orders_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orders_open"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/poppins" />
+
+                    <TextView
+                        android:id="@+id/orderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/orders_text"
+                        android:fontFamily="@font/poppins"
+                        android:text="----"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/viewbg"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/call"
+                        android:textAllCaps="false"
+                        android:textColor="#0d0d0d"
+                        android:textSize="@dimen/dimen_15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@drawable/divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Time:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/time_text"
+                        android:fontFamily="@font/poppins"
+                        android:text="-----  ,"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/time_text"
+                        android:fontFamily="@font/poppins"
+                        android:layout_toRightOf="@id/date"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <Button
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/viewbg"
+                        android:fontFamily="@font/poppins"
+                        android:text="text"
+                        android:textAllCaps="false"
+                        android:textColor="#0d0d0d"
+                        android:textSize="@dimen/dimen_15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@drawable/divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/custmotDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Customer Details:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/custmotDetails"
+                        android:fontFamily="@font/poppins"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:fontFamily="@font/poppins"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:id="@+id/address_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/number"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Address:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_text"
+                        android:fontFamily="@font/poppins"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/doorNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address"
+                        android:fontFamily="@font/poppins"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/landmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/doorNumber"
+                        android:fontFamily="@font/poppins"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/mapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/viewbg"
+                        android:drawableRight="@drawable/ic_location_on_black_24dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/map"
+                        android:textAllCaps="false"
+                        android:textColor="#0d0d0d"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@drawable/divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/services_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Services:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/category_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/services_text"
+                        android:fontFamily="@font/poppins"
+                        android:text="------"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/services_text"
+                        android:layout_marginLeft="@dimen/margin_20dp"
+                        android:layout_toRightOf="@id/category_name"
+                        android:fontFamily="@font/poppins"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/package_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/category_name"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/full_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="42dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/viewbg"
+                        android:fontFamily="@font/poppins"
+                        android:text="full details"
+                        android:textAllCaps="false"
+                        android:textColor="#0d0d0d"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

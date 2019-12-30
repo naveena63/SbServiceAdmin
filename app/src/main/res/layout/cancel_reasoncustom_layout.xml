@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+        <CheckBox
+            android:id="@+id/rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/rb8"
+            android:checked="false" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/rb"
+               android:checked="false"
+               android:textColor="@color/black"
+               android:textSize="15dp"
+               android:onClick="onRadioButtonClicked"
+               android:fontFamily="@font/poppins"
+               android:text="@string/rb8"
+               />
+</RadioGroup>
+</LinearLayout>-->
+
+
+
+

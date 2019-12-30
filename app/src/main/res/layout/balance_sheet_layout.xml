@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/dimen_2dp"
+    app:cardMaxElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="OrderId:"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:textSize="@dimen/dimen_15dp" />
+
+        <TextView
+            android:id="@+id/textViewPreviousBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="PreviousBalance:"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:textSize="@dimen/dimen_15dp" />
+        <TextView
+            android:id="@+id/amountReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins"
+            android:text="Reason:"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15dp"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/amountTotalBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins"
+            android:text="TotalBalance:"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15dp"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="@dimen/dimen_2dp"
+            app:cardMaxElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.9"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/servivceIds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EmpName                       :"
+                            android:textColor="#686868" />
+                        <TextView
+                            android:id="@+id/empName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" Naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/orderIds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EmpId                          :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/empid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/fathername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="FatherName                 :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/fatherName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/empCompanyNumeberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EMpCompanyNumber :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/empCmpNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="3546465"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="12dp"    />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/empPersonalNumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EmpPersonalNum         :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/EmpPersonalNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/emaolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Email                             :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/emailId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/ratingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Rating                            :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" 5"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/Adhartext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="AdharCard                    :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/AdharCrad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/panText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="PanCard                        :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/panCardNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/bankText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Bank                               :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/accountMonyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EmpAccountMoney       :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/EmpAccountMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=" naveena"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/dates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/poppins_light"
+                            android:text="EmpAddress                  :"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/empAddres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="  godavari"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/viewButn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rounded_button"
+                        android:fontFamily="@font/taviraj_medium"
+                        android:text="ViewBalance"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize_13sp"
+                        android:visibility="visible" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:padding="5dp"
+         android:layout_height="wrap_content">
+
+     <TextView
+         android:id="@+id/empid"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="employee Id:"
+         android:textSize="15dp"
+         android:fontFamily="@font/taviraj_medium"
+         android:textColor="@color/black"
+         />
+     <TextView
+         android:id="@+id/empName"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="employee Name"
+         android:textSize="@dimen/dimen_15dp"
+         android:fontFamily="@font/taviraj_medium"
+         android:textColor="@color/black"
+         />
+         <TextView
+             android:id="@+id/empPhoneNum"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="employee Phone Number"
+             android:textSize="15dp"
+             android:fontFamily="@font/taviraj_medium"
+             android:textColor="@color/black"
+             />
+         <TextView
+             android:id="@+id/empAddres"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="employee Address"
+             android:textSize="15dp"
+             android:fontFamily="@font/taviraj_medium"
+             android:textColor="@color/black"
+
+             />
+
+
+     </LinearLayout>-->
+</LinearLayout>
