@@ -50,11 +50,8 @@ public class BalanceSheetadminActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         balanceSheet();
-
     }
-
     private void balanceSheet() {
-
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConstants.BALANCE_SHEET, new Response.Listener<String>() {
             @Override
@@ -75,7 +72,6 @@ public class BalanceSheetadminActivity extends AppCompatActivity {
                             String reason = json.getString("reason");
                             String total_balence = json.getString("total_balence");
 
-
                             balanceSheetModel = new BalanceSheetModel();
                             textViewBalance.setText("Wallet Balance Is:"+ total_balence);
                             balanceSheetModel.setOrder_id(orderId);
@@ -86,8 +82,6 @@ public class BalanceSheetadminActivity extends AppCompatActivity {
                        /*     balanceSheetAdapter = new BalanceSheetAdapter(BalanceSheetActivity.this, balanceSheetModelList);
                             balanceSheetAdapter.notifyDataSetChanged();
                             recyclerView.setAdapter(balanceSheetAdapter);*/
-
-
                             balanceSheetModelList.add(balanceSheetModel);
                             if (balanceSheetModelList.size() > 0) {
                                 balanceSheetAdapter = new BalanceSheetAdapter(BalanceSheetadminActivity.this, balanceSheetModelList);
@@ -125,9 +119,6 @@ public class BalanceSheetadminActivity extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(BalanceSheetadminActivity.this);
         requestQueue.add(stringRequest);
-
-
-
 
     }
 

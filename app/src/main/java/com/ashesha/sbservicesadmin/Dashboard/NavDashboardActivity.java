@@ -204,11 +204,7 @@ public class NavDashboardActivity extends AppCompatActivity
         StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConstants.NOTIFICTAION_URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-
-
-
-
-               Log.d("notificationRes","Notification res:\n"+response);
+                Log.d("notificationRes","Notification res:\n"+response);
             }
         }, new Response.ErrorListener() {
             @Override

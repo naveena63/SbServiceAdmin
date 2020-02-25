@@ -339,6 +339,20 @@
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/textSize_13sp"
                         android:visibility="visible" />
+                    <Button
+                        android:id="@+id/updateButn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button"
+                        android:fontFamily="@font/taviraj_medium"
+                        android:text="update Balance"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize_13sp"
+                        android:visibility="visible" />
 
 
 

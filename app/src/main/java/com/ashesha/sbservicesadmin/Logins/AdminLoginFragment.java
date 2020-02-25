@@ -37,7 +37,7 @@ import java.util.Map;
 public class AdminLoginFragment extends Fragment {
     View rootView;
     EditText email, password;
-    TextView playsotr;
+    TextView playsotr,textviewregister;
     Button button;
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PASSWORD = "password";
@@ -57,7 +57,14 @@ public class AdminLoginFragment extends Fragment {
         editor = sharedpreferences.edit();
         prefManager = new PrefManager(getActivity());
         button = rootView.findViewById(R.id.signupButton);
-
+        textviewregister=rootView.findViewById(R.id.textviewregister);
+        textviewregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),ProviderRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
         email = rootView.findViewById(R.id.email);
         password = rootView.findViewById(R.id.password);
         playsotr = rootView.findViewById(R.id.palystore_text);

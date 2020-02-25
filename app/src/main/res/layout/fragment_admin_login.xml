@@ -7,6 +7,7 @@
     tools:context=".Logins.AdminLoginFragment">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -99,6 +100,14 @@
                     android:textAllCaps="false"
                     android:textColor="#fff"
                     android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textviewregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+android:textAlignment="center"
+                    android:text="Are you a service Provider? Register Now"
+                    />
             </LinearLayout>
         </RelativeLayout>
 
@@ -113,5 +122,7 @@
             android:elevation="4dp"
             android:src="@drawable/user" />
     </RelativeLayout>
+
+
 
 </FrameLayout>

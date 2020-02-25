@@ -60,6 +60,12 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
                 prefManager.setAdminEmpId(allEmployeesModelList.get(i).getAdminEmpId());
             }
         });
+        viewHolder.updateButn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 
@@ -70,7 +76,7 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView empId, empName, empCompanuNum,empPersonalNum,empFatherName,empRating,emapAdhar,empPan,empBank,empAcountMoney,empAddress;
-        Button buttn;
+        Button buttn,updateButn;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -86,6 +92,7 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
             empAcountMoney = itemView.findViewById(R.id.EmpAccountMoney);
             empAddress = itemView.findViewById(R.id.empAddres);
             buttn = itemView.findViewById(R.id.viewButn);
+            updateButn = itemView.findViewById(R.id.updateButn);
 
         }
     }
