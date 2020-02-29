@@ -64,6 +64,10 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
             @Override
             public void onClick(View v) {
 
+
+
+
+
             }
         });
 

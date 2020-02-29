@@ -42,6 +42,7 @@ public class AppConstants {
     public static String Work_progress = "https://sbservices.in/api/Employees/work_processing";
     public static String ADMIN_ASSIGN_JOB = "https://sbservices.in/api/Adminapp/adminAssignedJobs";
     public static String SAVE_CANCELED_REASON = "https://sbservices.in/api/Adminapp/cancelledReason";
+    public static String BALNCESHEET_UPDATE = "http://sbservices.in/api/update-balance-update";
 
     public static String BALANCE_SHEET = "https://sbservices.in/api/Employees/balence_sheet";
     public static String ADMIN_OPEN_COUNT_URL = "https://sbservices.in/api/Adminapp/adminOpenJobs_count";
