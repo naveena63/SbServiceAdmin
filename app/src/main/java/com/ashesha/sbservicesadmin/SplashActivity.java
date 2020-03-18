@@ -60,9 +60,7 @@ public class SplashActivity extends AppCompatActivity {
         String unique_id = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
         Log.d("uniqueId", "uniqueId" + unique_id);
         prefManager.storeValue(AppConstants.DEVICE_ID, unique_id);
-
         prefManager.setDeviceId(unique_id);
-
 
         getSupportActionBar().hide();
         //  ivImage=findViewById(R.id.logo_one);
