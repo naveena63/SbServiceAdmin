@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.ashesha.sbservicesadmin.BalanceSheet.BalanceSheetActivity;
 import com.ashesha.sbservicesadmin.BalanceSheet.BalanceSheetadminActivity;
+import com.ashesha.sbservicesadmin.BalanceSheet.UpdateBalanceSheetActivity;
 import com.ashesha.sbservicesadmin.R;
 import com.ashesha.sbservicesadmin.Utils.PrefManager;
 
@@ -26,8 +27,6 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
         this.allEmployeesModelList = allEmployeesModelList;
 
     }
-
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -64,10 +63,8 @@ public class AllEmployeesAdapter extends RecyclerView.Adapter<AllEmployeesAdapte
             @Override
             public void onClick(View v) {
 
-
-
-
-
+Intent intent=new Intent(context,UpdateBalanceSheetActivity.class);
+context.startActivity(intent);
             }
         });
 
